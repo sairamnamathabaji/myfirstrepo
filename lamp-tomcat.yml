@@ -34,7 +34,7 @@
       notify:
         - restart tomcat8
     handlers:
-      - name: restart tomcat8
+      - name: tomcat8
         service:
           name: tomcat8
           state: restarted
