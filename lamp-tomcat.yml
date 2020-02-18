@@ -33,9 +33,9 @@
         dest: /etc/tomcat8/tomcat_users.xml
       notify:
         - restart tomcat8
-    handlers:
-      - name: restart tomcat8
-        service:
-          name: tomcat8
-          state: restarted
+  handlers:
+    - name: restart tomcat8
+      service:
+        name: tomcat
+        state: restarted
 
